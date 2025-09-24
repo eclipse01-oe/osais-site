@@ -130,21 +130,16 @@
     </div>
 
     <div>
-        <svg viewBox="0 0 100 100" width="300" height="150" 
-        style="border:1px solid #1111;
-         margin: 20px"
-        >
-            <!-- A curved notch-like bottom bar -->
-            <path d="M0 100 
-                L40 100 
-                Q45 95 50 95 
-                Q55 95 60 100 
-                L100 100 
-                L100 0 
-                L0 0 Z"
-                fill="lightblue" stroke="black"
-            />
-        </svg>
+        <svg style="width:300px; height:150px; border:1px solid #ccc">
+              <!-- Define the symbol -->
+                <symbol id="botto-nav" viewBox="0 0 100 100">
+                    <path d="M40 100 Q41 100 42 95 Q42 95 55 95 Q55 95 56 100 Z"
+                              fill="lightblue" stroke="black"/>
+                                </symbol>
+
+                                  <!-- Use the symbol -->
+                                    <use href="#botto-nav" x="0" y="0" width="100" height="100"/>
+                                    </svg>
     </div>
 </body>
 </html>
